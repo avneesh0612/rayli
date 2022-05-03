@@ -10,7 +10,7 @@ import configFileExists from "../../utils/configFileExists";
 export default class Show extends Command {
   static description = "🚚 Remove the configured values";
 
-  static examples = ["$ rayli config remove"];
+  static examples = ["$ rayli config:remove"];
 
   async run() {
     if (configFileExists()) {
