@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "@types/inquirer": "^8.2.1",
-    "@types/node": "^16.9.4",
+    "@types/node": "^16.11.33",
     "@types/shelljs": "^0.8.11",
     "eslint": "^7.32.0",
     "eslint-config-oclif": "^4",
