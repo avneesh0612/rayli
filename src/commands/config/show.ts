@@ -7,7 +7,7 @@ import getConfigValues from "../../utils/getConfigValues";
 export default class Show extends Command {
   static description = "👀 Check your configured values";
 
-  static examples = ["$ rayli config show"];
+  static examples = ["$ rayli config:show"];
 
   async run() {
     if (configFileExists()) {
