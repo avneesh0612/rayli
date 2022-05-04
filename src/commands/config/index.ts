@@ -13,7 +13,7 @@ export default class Config extends Command {
   static examples = ["$ rayli config"];
 
   async run() {
-    inquirer.prompt(questions).then((answers) => {
+    inquirer.prompt(questions).then(answers => {
       const spinner = ora("🔐 Configuring the default values").start();
 
       try {

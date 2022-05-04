@@ -44,7 +44,7 @@ export default class Generate extends Command {
       }
     }
 
-    inquirer.prompt(promptQuestions).then((answers) => {
+    inquirer.prompt(promptQuestions).then(answers => {
       let color = answers.color,
         background = answers.background,
         darkMode = answers.darkMode,

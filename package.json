@@ -38,6 +38,7 @@
     "eslint-config-oclif-typescript": "^1.0.2",
     "globby": "^11",
     "oclif": "^2",
+    "prettier": "^2.6.2",
     "shx": "^0.3.4",
     "ts-node": "^10.7.0",
     "tslib": "^2.3.1",
@@ -58,6 +59,7 @@
   },
   "scripts": {
     "build": "shx rm -rf dist && tsc -b",
+    "format": "prettier --write .",
     "lint": "eslint . --ext .ts --config .eslintrc",
     "postpack": "shx rm -f oclif.manifest.json",
     "posttest": "yarn lint",

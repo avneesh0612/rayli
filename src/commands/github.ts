@@ -51,7 +51,7 @@ export default class Github extends Command {
       }
     }
 
-    inquirer.prompt(promptQuestions).then(async (answers) => {
+    inquirer.prompt(promptQuestions).then(async answers => {
       let color = answers.color,
         background = answers.background,
         darkMode = answers.darkMode,
@@ -64,7 +64,7 @@ export default class Github extends Command {
         padding = getConfigValues().padding;
       }
 
-      await getGitHubFileContent(flags.url).then((content) =>
+      await getGitHubFileContent(flags.url).then(content =>
         createImage(
           color,
           background,

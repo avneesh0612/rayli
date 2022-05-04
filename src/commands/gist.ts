@@ -51,7 +51,7 @@ export default class Gist extends Command {
       }
     }
 
-    inquirer.prompt(promptQuestions).then(async (answers) => {
+    inquirer.prompt(promptQuestions).then(async answers => {
       let color = answers.color,
         background = answers.background,
         darkMode = answers.darkMode,
@@ -64,7 +64,7 @@ export default class Gist extends Command {
         padding = getConfigValues().padding;
       }
 
-      await getGistContent(gistId as string).then((content) =>
+      await getGistContent(gistId as string).then(content =>
         createImage(
           color,
           background,
