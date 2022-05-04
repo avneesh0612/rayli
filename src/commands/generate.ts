@@ -44,6 +44,8 @@ export default class Generate extends Command {
       }
     }
 
+    inquirer.registerPrompt("search-list", require("inquirer-search-list"));
+
     inquirer.prompt(promptQuestions).then(answers => {
       let color = answers.color,
         background = answers.background,

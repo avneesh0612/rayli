@@ -40,15 +40,19 @@ const createImage = async (
 
     await page.click(".export");
 
-    await browser.close();
-
-    console.log(
-      chalk.green(
-        `📸 Image of your code has been saved at ${resolvedDownloadPath}`
-      )
+    setTimeout(
+      async () =>
+        await browser
+          .close()
+          .then(() =>
+            spinner.succeed(
+              chalk.green(
+                `📸 Image of your code has been saved at ${resolvedDownloadPath}`
+              )
+            )
+          ),
+      2000
     );
-
-    spinner.succeed();
   } catch (err) {
     spinner.fail();
     await browser.close();

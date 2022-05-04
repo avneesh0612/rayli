@@ -19,7 +19,7 @@ export default class Github extends Command {
     "🐱 Generate a beautiful image of your code hosted on GitHub";
 
   static examples = [
-    "$ rayli github --url=https://raw.githubusercontent.com/Kira272921/snipli/main/src/commands/download.ts",
+    "$ rayli github --url=https://github.com/buidler-hub/projects/blob/main/README.md",
   ];
 
   static flags = {
@@ -61,6 +61,8 @@ export default class Github extends Command {
         return;
       }
     }
+
+    inquirer.registerPrompt("search-list", require("inquirer-search-list"));
 
     inquirer.prompt(promptQuestions).then(async answers => {
       let color = answers.color,

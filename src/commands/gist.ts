@@ -61,6 +61,8 @@ export default class Gist extends Command {
       }
     }
 
+    inquirer.registerPrompt("search-list", require("inquirer-search-list"));
+
     inquirer.prompt(promptQuestions).then(async answers => {
       let color = answers.color,
         background = answers.background,
