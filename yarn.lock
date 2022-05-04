@@ -261,6 +261,13 @@
   resolved "https://registry.npmjs.org/@isaacs/string-locale-compare/-/string-locale-compare-1.1.0.tgz"
   integrity sha512-SQ7Kzhh9+D+ZW9MA0zkYv3VXhIDNx+LzM6EJ+/65I3QY+enU6Itte7E5XX7EWrqLW2FN4n06GWzBnPoC3th2aQ==
 
+"@lucasliet/imgur-ts@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@lucasliet/imgur-ts/-/imgur-ts-1.1.2.tgz#59f2788f8332fb5ed152033a84ca314b225880cc"
+  integrity sha512-/zkE69L4QJXlz1zwrb5Wx1MSq63i43wdQ2IxDXwOR8AI/E+/NJrL3v5odVK2e5sazWAEMb+vj53MpsSjJSpaAw==
+  dependencies:
+    "@rmp135/imgur" "^0.5.0"
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.npmjs.org/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz"
@@ -631,6 +638,14 @@
   integrity sha512-s1zLBjWhdEI2zwaoSgyOFoKSl109CUcVBCc7biPJ3aAf6LGLU6szDvi31JPU7bxfla2lqfhjbbg/5DdFNxOwHw==
   dependencies:
     "@octokit/openapi-types" "^11.2.0"
+
+"@rmp135/imgur@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@rmp135/imgur/-/imgur-0.5.0.tgz#52e6cafea76e6b784e1ae90677b58e99b327596d"
+  integrity sha512-ezEVE9oZs+RcCXeH08qFOgxY+ZJzqenXEEOxRjA0ELyNYbX34bEn0wThFqcK/xFB22CqGa+BhR+73oWseeRt4g==
+  dependencies:
+    axios "^0.16.0"
+    url-join "^1.1.0"
 
 "@tootallnate/once@1":
   version "1.1.2"
@@ -1005,6 +1020,14 @@ aws-sdk@^2.1069.0:
     url "0.10.3"
     uuid "3.3.2"
     xml2js "0.4.19"
+
+axios@^0.16.0:
+  version "0.16.2"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.16.2.tgz#ba4f92f17167dfbab40983785454b9ac149c3c6d"
+  integrity sha1-uk+S8XFn37q0CYN4VFS5rBScPG0=
+  dependencies:
+    follow-redirects "^1.2.3"
+    is-buffer "^1.1.5"
 
 axios@^0.27.2:
   version "0.27.2"
@@ -2124,6 +2147,11 @@ follow-redirects@^1.14.9:
   resolved "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.14.9.tgz"
   integrity sha512-MQDfihBQYMcyy5dhRDJUHcw7lb2Pv/TuE6xP1vyraLukNDHKbDxDNaOE3NbCAdKQApno+GPRyo1YAp89yCjK4w==
 
+follow-redirects@^1.2.3:
+  version "1.15.0"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.0.tgz#06441868281c86d0dda4ad8bdaead2d02dca89d4"
+  integrity sha512-aExlJShTV4qOUOL7yF1U5tvLCB0xQuudbf6toyYA0E/acBNw71mvjFTnLaRp50aQaYocMR0a/RMMBIHeZnGyjQ==
+
 form-data@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/form-data/-/form-data-4.0.0.tgz"
@@ -2504,6 +2532,11 @@ ignore@^5.1.1, ignore@^5.1.8, ignore@^5.2.0:
   resolved "https://registry.npmjs.org/ignore/-/ignore-5.2.0.tgz"
   integrity sha512-CmxgYGiEPCLhfLnpPp1MoRmifwEIOgjcHXxOBjv7mY96c+eWScsOP9c112ZyLdWHi0FxHjI+4uVhKYp/gcdRmQ==
 
+image-extensions@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/image-extensions/-/image-extensions-1.1.0.tgz#b8e6bf6039df0056e333502a00b6637a3105d894"
+  integrity sha1-uOa/YDnfAFbjM1AqALZjejEF2JQ=
+
 import-fresh@^3.0.0, import-fresh@^3.2.1:
   version "3.3.0"
   resolved "https://registry.npmjs.org/import-fresh/-/import-fresh-3.3.0.tgz"
@@ -2606,6 +2639,11 @@ is-arrayish@^0.2.1:
   resolved "https://registry.npmjs.org/is-arrayish/-/is-arrayish-0.2.1.tgz"
   integrity sha1-d8mYQFJ6qOyxqLppe4BkWnqSap0=
 
+is-buffer@^1.1.5:
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
+  integrity sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==
+
 is-builtin-module@^3.1.0:
   version "3.1.0"
   resolved "https://registry.npmjs.org/is-builtin-module/-/is-builtin-module-3.1.0.tgz"
@@ -2653,6 +2691,13 @@ is-glob@^4.0.0, is-glob@^4.0.1, is-glob@^4.0.3:
   integrity sha512-xelSayHH36ZgE7ZWhli7pW34hNbNl8Ojv5KVmkJD4hBdD3th8Tfk9vYasLM+mXWOZhFkgZfxhLSnrwRr4elSSg==
   dependencies:
     is-extglob "^2.1.1"
+
+is-image@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/is-image/-/is-image-3.0.0.tgz#f183431372f6f8caf7cda316a0a6dea4d41926dd"
+  integrity sha512-NNPLvwKZ/hqx1Wv+ayKvVeDOylIapVKSxK/guzmB9doAk0FEdK0KqFKbnwNbuMLEPqEY4NaBhxzB4e98fVOq2Q==
+  dependencies:
+    image-extensions "^1.1.0"
 
 is-interactive@^1.0.0:
   version "1.0.0"
@@ -4581,6 +4626,11 @@ uri-js@^4.2.2:
   integrity sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==
   dependencies:
     punycode "^2.1.0"
+
+url-join@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/url-join/-/url-join-1.1.0.tgz#741c6c2f4596c4830d6718460920d0c92202dc78"
+  integrity sha1-dBxsL0WWxIMNZxhGCSDQySIC3Hg=
 
 url@0.10.3:
   version "0.10.3"

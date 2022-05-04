@@ -6,7 +6,7 @@ const verifyGitHubLink = async (githubLink: string) => {
     .replace("/blob/", "/");
 
   try {
-    const response = await axios.get(rawContentLink).then(res => res.data);
+    const response = await axios.get(rawContentLink);
     if (response.status === 200) {
       return true;
     } else {

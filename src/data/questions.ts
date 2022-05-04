@@ -1,4 +1,5 @@
 import fs from "fs";
+import isImage from "is-image";
 
 import { colors, languages } from "./options";
 
@@ -77,34 +78,31 @@ const questions = [
   },
 ];
 
-const configQuestions = [
-  questions[0],
-  questions[1],
-  questions[2],
-  questions[3],
-];
+const configQuestions = questions.slice(0, 4);
 
-const requiresUserInputQuestions = [
-  questions[4],
-  questions[5],
-  questions[6],
-  questions[7],
-];
+const requiresUserInputQuestions = questions.slice(-4);
 
-const gistQuestions = [
-  questions[0],
-  questions[1],
-  questions[2],
-  questions[3],
-  questions[5],
-  questions[6],
-  questions[7],
-];
+const newArr = [...questions];
 
-const gistRequiresUserInputQuestions = [
-  questions[5],
-  questions[6],
-  questions[7],
+newArr.splice(4, 1);
+
+const gistQuestions = newArr;
+
+const gistRequiresUserInputQuestions = gistQuestions.slice(-3);
+
+const imgurQuestions = [
+  {
+    type: "input",
+    name: "path",
+    message: "Enter the path where the image exists:",
+    validate: async (path: string) => {
+      if (isImage(path)) {
+        return true;
+      } else {
+        return "Please enter a valid image file's path";
+      }
+    },
+  },
 ];
 
 export {
@@ -113,4 +111,5 @@ export {
   requiresUserInputQuestions,
   gistQuestions,
   gistRequiresUserInputQuestions,
+  imgurQuestions,
 };

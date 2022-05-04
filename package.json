@@ -17,6 +17,7 @@
     "/oclif.manifest.json"
   ],
   "dependencies": {
+    "@lucasliet/imgur-ts": "^1.1.2",
     "@oclif/core": "^1",
     "@oclif/plugin-help": "^5",
     "@oclif/plugin-plugins": "^2.1.0",
@@ -25,6 +26,7 @@
     "chalk": "4.1.2",
     "inquirer": "^8.2.4",
     "inquirer-search-list": "^1.2.6",
+    "is-image": "^3.0.0",
     "js-base64": "^3.7.2",
     "ora": "5.4.1",
     "puppeteer": "^13.7.0",
