@@ -7,6 +7,7 @@ import createImage from "../lib/createImage";
 import getGitHubFileContent from "../utils/getGitHubFileContent";
 import configFileExists from "../utils/configFileExists";
 import getConfigValues from "../utils/getConfigValues";
+import verifyGitHubLink from "../utils/verifyGitHubLink";
 
 import {
   gistQuestions,
@@ -39,6 +40,15 @@ export default class Github extends Command {
 
     let promptQuestions = gistQuestions;
 
+    if ((await verifyGitHubLink(flags.url as string)) === false) {
+      console.error(
+        chalk.red(
+          "🚫 The link you provided is not a valid GitHub link. Please try again."
+        )
+      );
+      return;
+    }
+
     if (flags.config === true) {
       if (configFileExists()) {
         promptQuestions = gistRequiresUserInputQuestions;
@@ -48,6 +58,7 @@ export default class Github extends Command {
             "Default configured values not found. Use `rayli config` to configure them."
           )
         );
+        return;
       }
     }
 

@@ -7,8 +7,6 @@
 
 # Usage
 
-<!-- usage -->
-
 ```sh-session
 $ npm install -g rayli
 $ rayli COMMAND
@@ -58,7 +56,7 @@ DESCRIPTION
   🚚 Remove the configured values
 
 EXAMPLES
-  $ rayli config remove
+  $ rayli config:remove
 ```
 
 ## `rayli config:show`
@@ -73,7 +71,7 @@ DESCRIPTION
   👀 Check your configured values
 
 EXAMPLES
-  $ rayli config show
+  $ rayli config:show
 ```
 
 ## `rayli generate`
@@ -91,7 +89,7 @@ DESCRIPTION
   📷 Generate a beautiful image of your code snippet
 
 EXAMPLES
-  $ rayli generate
+  $ rayli generate --config
 ```
 
 ## `rayli gist`

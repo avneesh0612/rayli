@@ -40,22 +40,18 @@ const createImage = async (
 
     await page.click(".export");
 
-    setTimeout(
-      async () =>
-        await browser
-          .close()
-          .then(() =>
-            console.log(
-              chalk.green(
-                `📸 Image of your code has been saved at ${resolvedDownloadPath}`
-              )
-            )
-          ),
-      1000
+    await browser.close();
+
+    console.log(
+      chalk.green(
+        `📸 Image of your code has been saved at ${resolvedDownloadPath}`
+      )
     );
+
     spinner.succeed();
   } catch (err) {
     spinner.fail();
+    await browser.close();
     console.log(chalk.red("An error occurred while generating image"));
     console.log(chalk.red(err));
   }

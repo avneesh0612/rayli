@@ -7,6 +7,7 @@ import createImage from "../lib/createImage";
 import getGistContent from "../utils/getGistContent";
 import configFileExists from "../utils/configFileExists";
 import getConfigValues from "../utils/getConfigValues";
+import verifyGistLink from "../utils/verifyGistLink";
 
 import {
   gistQuestions as questions,
@@ -38,6 +39,15 @@ export default class Gist extends Command {
 
     let gistId = flags.url.split("/").pop();
     let promptQuestions = questions;
+
+    if ((await verifyGistLink(flags.url as string)) === false) {
+      console.error(
+        chalk.red(
+          "🚫 The link you provided is not a valid Gist link. Please try again."
+        )
+      );
+      return;
+    }
 
     if (flags.config === true) {
       if (configFileExists()) {
