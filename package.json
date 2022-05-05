@@ -1,12 +1,12 @@
 {
   "name": "rayli",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "📸 A command-line tool to generate code images of your local code right away from the terminal",
   "author": "Kira272921",
   "bin": {
     "rayli": "./bin/run"
   },
-  "homepage": "https://github.com/Kira272921/rayli",
+  "homepage": "https://github.com/buidler-hub/rayli",
   "license": "MIT",
   "main": "src/index.ts",
   "repository": "buidler-hub/rayli",
@@ -75,7 +75,7 @@
   "resolutions": {
     "@lucasliet/imgur-ts/**/@rmp135/imgur/**/axios": ">=0.21.2"
   },
-  "bugs": "https://github.com/Kira272921/rayli/issues",
+  "bugs": "https://github.com/buidler-hub/rayli/issues",
   "keywords": [
     "cli",
     "automation",
