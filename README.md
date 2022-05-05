@@ -103,6 +103,7 @@ USAGE
 FLAGS
   -c, --[no-]config  🔐 Use the default configured values
   -u, --url=<value>  (required) 🔗 Link of the gist
+  -r, --range=<value> 🔍 Range of the gist
 
 DESCRIPTION
   🌌 Generate a beautiful image of your gist

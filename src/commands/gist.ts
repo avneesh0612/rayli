@@ -19,7 +19,7 @@ export default class Gist extends Command {
   static description = "🌌 Generate a beautiful image of your gist";
 
   static examples = [
-    "$ rayli gist --url=https://gist.github.com/Kira272921/bfce776b3ad1145f764d89c296fec605",
+    "$ rayli gist --url=https://gist.github.com/tastatham/7305dc8f8ea5dc51da3c227fa92ed9d4 --range=1-10",
   ];
 
   static flags = {
