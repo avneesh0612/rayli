@@ -3,6 +3,7 @@ import inquirer from "inquirer";
 import chalk from "chalk";
 
 import createImage from "../lib/createImage";
+import truncateGist from "../lib/truncateGist";
 
 import getGistContent from "../utils/getGistContent";
 import configFileExists from "../utils/configFileExists";
@@ -32,6 +33,10 @@ export default class Gist extends Command {
       description: "🔐 Use the default configured values",
       allowNo: true,
     }),
+    range: Flags.string({
+      char: "r",
+      description: "🔍 Range of the gist",
+    }),
   };
 
   async run() {
@@ -39,6 +44,9 @@ export default class Gist extends Command {
 
     let gistId = flags.url.split("/").pop();
     let promptQuestions = questions;
+    let content = await getGistContent(gistId as string).then(
+      content => content
+    );
 
     if ((await verifyGistLink(flags.url as string)) === false) {
       console.error(
@@ -55,9 +63,19 @@ export default class Gist extends Command {
       } else {
         console.log(
           chalk.redBright(
-            "Default configured values not found. Use `rayli config` to configure them."
+            "🔐 Default configured values not found. Use `rayli config` to configure them."
           )
         );
+        process.exit(1);
+      }
+    }
+
+    if (flags.range) {
+      try {
+        content = (await truncateGist(flags.range, gistId as string)) as string;
+      } catch (err) {
+        console.error(chalk.red(err));
+        return;
       }
     }
 
@@ -76,17 +94,15 @@ export default class Gist extends Command {
         padding = getConfigValues().padding;
       }
 
-      await getGistContent(gistId as string).then(content =>
-        createImage(
-          color,
-          background,
-          darkMode,
-          padding,
-          content,
-          answers.language,
-          answers.title,
-          answers.download
-        )
+      createImage(
+        color,
+        background,
+        darkMode,
+        padding,
+        content,
+        answers.language,
+        answers.title,
+        answers.download
       );
     });
   }

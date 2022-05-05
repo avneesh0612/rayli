@@ -58,7 +58,7 @@ export default class Github extends Command {
             "Default configured values not found. Use `rayli config` to configure them."
           )
         );
-        return;
+        process.exit(1);
       }
     }
 

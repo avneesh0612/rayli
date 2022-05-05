@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const getGistContent = async (gistId: string) => {
+const getGistContent = async (gistId: string): Promise<string> => {
   const response = await axios
     .get(`https://api.github.com/gists/${gistId}`)
     .then(res => res.data);
