@@ -1,6 +1,6 @@
 {
   "name": "rayli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "📸 A command-line tool to generate code images of your local code right away from the terminal",
   "author": "Kira272921",
   "bin": {
@@ -71,6 +71,9 @@
   },
   "engines": {
     "node": ">=12.0.0"
+  },
+  "resolutions": {
+    "@lucasliet/imgur-ts/**/@rmp135/imgur/**/axios": ">=0.21.2"
   },
   "bugs": "https://github.com/Kira272921/rayli/issues",
   "keywords": [
