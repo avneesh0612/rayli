@@ -1,5 +1,9 @@
 # 📸 rayli
 
+![](https://i.imgur.com/miVLRoK.png)
+
+<a href="https://www.producthunt.com/posts/rayli?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-rayli" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=345756&theme=dark" alt="Rayli - generate&#0032;image&#0032;of&#0032;a&#0032;code&#0032;block&#0032;right&#0032;from&#0032;the&#0032;terminal | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a> <a href="https://www.producthunt.com/posts/rayli?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-rayli" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=345756&theme=dark&period=daily" alt="Rayli - generate&#0032;image&#0032;of&#0032;a&#0032;code&#0032;block&#0032;right&#0032;from&#0032;the&#0032;terminal | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+
 📸 A command-line tool to generate code images of your local code right away from the terminal
 
 - [Usage](#usage)
@@ -148,7 +152,6 @@ FLAGS
 DESCRIPTION
   Display help for rayli.
 ```
-
 
 ## 🦸‍♂️ Authors
 
