@@ -8,7 +8,7 @@ import { imgurQuestions as questions } from "../data/questions";
 export default class Imgur extends Command {
   static description = "✈ Upload an image to Imgur";
 
-  static examples = ["$ rayli imgur --path='myAwesomeCodeSnippet.png'"];
+  static examples = ["$ rayli imgur"];
 
   async run() {
     inquirer.prompt(questions).then(answers => {
