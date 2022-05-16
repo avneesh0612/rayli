@@ -153,6 +153,12 @@ DESCRIPTION
   Display help for rayli.
 ```
 
+## 🖍 Examples
+
+![](https://i.imgur.com/jOuOc9Y.png)
+
+![](https://i.imgur.com/XniMSiF.png)
+
 ## 🦸‍♂️ Authors
 
 ### Avneesh Agarwal
