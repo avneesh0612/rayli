@@ -1,6 +1,6 @@
 {
   "name": "rayli",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "📸 A command-line tool to generate code images of your local code right away from the terminal",
   "author": "Kira272921",
   "bin": {
