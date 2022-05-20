@@ -28,7 +28,7 @@
     "inquirer-search-list": "^1.2.6",
     "is-image": "^3.0.0",
     "js-base64": "^3.7.2",
-    "ora": "5.4.1",
+    "ora": "6.1.0",
     "puppeteer": "^14.0.0",
     "shelljs": "^0.8.5"
   },
