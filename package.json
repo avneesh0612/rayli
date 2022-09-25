@@ -24,7 +24,7 @@
     "@oclif/plugin-warn-if-update-available": "^2.0.4",
     "axios": "^0.27.2",
     "chalk": "4.1.2",
-    "inquirer": "^8.2.4",
+    "inquirer": "^9.0.0",
     "inquirer-search-list": "^1.2.6",
     "is-image": "^3.0.0",
     "js-base64": "^3.7.2",
@@ -33,7 +33,7 @@
     "shelljs": "^0.8.5"
   },
   "devDependencies": {
-    "@types/inquirer": "8.2.1",
+    "@types/inquirer": "9.0.1",
     "@types/node": "17.0.38",
     "@types/shelljs": "0.8.11",
     "eslint": "8.17.0",
