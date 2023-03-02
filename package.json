@@ -41,7 +41,7 @@
     "eslint-config-oclif-typescript": "1.0.2",
     "globby": "13.1.1",
     "oclif": "3.0.1",
-    "prettier": "2.6.2",
+    "prettier": "2.8.4",
     "shx": "0.3.4",
     "ts-node": "10.8.1",
     "tslib": "2.4.0",
