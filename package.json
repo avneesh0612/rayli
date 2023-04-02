@@ -20,7 +20,7 @@
     "@lucasliet/imgur-ts": "^1.1.2",
     "@oclif/core": "^1",
     "@oclif/plugin-help": "^5",
-    "@oclif/plugin-plugins": "^2.1.0",
+    "@oclif/plugin-plugins": "^2.4.3",
     "@oclif/plugin-warn-if-update-available": "^2.0.4",
     "axios": "^0.27.2",
     "chalk": "4.1.2",
